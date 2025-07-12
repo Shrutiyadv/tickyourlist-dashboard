@@ -1,6 +1,10 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
+// Tour Group Variants
+import TourGroupVariantData from "../pages/TourGroupVariantData/index";
+
+
 // Profile
 import UserProfile from "../pages/Authentication/user-profile";
 
@@ -149,6 +153,7 @@ import Contactus from "pages/Settings/contactus";
 import AdvertiseWithUs from "pages/Settings/AdvertiseWithUs";
 import Banner from "pages/Automobile/Banner/Banner";
 import EcommerceCustomers from "pages/Ecommerce/EcommerceCustomers";
+import { TourGroupVariants } from '../pages/TourGroups';
 // import EmailVerification from "pages/AuthenticationInner/auth-email-verification";
 
 const authProtectedRoutes = [
@@ -169,6 +174,9 @@ const authProtectedRoutes = [
   },
   { path: "/blog", component: <Blog /> },
   // { path: "/dashboard-job", component: <DashboardJob /> },
+
+  // Tour Group Variants
+  { path: "/tour-group-variants-data", component: <TourGroupVariantData /> },
 
   // //profile
   { path: "/profile", component: <UserProfile /> },
@@ -292,6 +300,7 @@ const authProtectedRoutes = [
   { path: "/pages-timeline", component: <PagesTimeline /> },
   { path: "/pages-faqs", component: <PagesFaqs /> },
   { path: "/pages-pricing", component: <PagesPricing /> },
+  { path: "/tour-group-variants", component: <TourGroupVariants /> },
 
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name

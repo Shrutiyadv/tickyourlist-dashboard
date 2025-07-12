@@ -172,14 +172,6 @@ const TableContainer = ({
             ))}
           </select>
         </Col>
-        {isGlobalFilter && (
-          <GlobalFilter
-            preGlobalFilteredRows={preGlobalFilteredRows}
-            globalFilter={state.globalFilter}
-            setGlobalFilter={setGlobalFilter}
-            isJobListGlobalFilter={isJobListGlobalFilter}
-          />
-        )}
         {isAddOptions && (
           <Col sm="7" className="d-flex justify-content-end">
             {/* <div className="text-sm-end"> */}
@@ -529,6 +521,21 @@ const TableContainer = ({
       <div className="table-responsive react-table">
         <Table bordered hover {...getTableProps()} className={className}>
           <thead className="table-light table-nowrap">
+            {/* Inject global search bar as a row above headers */}
+            {isGlobalFilter && (
+              <tr>
+                <th colSpan={columns.length} style={{ textAlign: 'left' }}>
+                  <div style={{ maxWidth: 400 }}>
+                    <GlobalFilter
+                      preGlobalFilteredRows={preGlobalFilteredRows}
+                      globalFilter={state.globalFilter}
+                      setGlobalFilter={setGlobalFilter}
+                      isJobListGlobalFilter={isJobListGlobalFilter}
+                    />
+                  </div>
+                </th>
+              </tr>
+            )}
             {headerGroups.map(headerGroup => (
               <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
                 {headerGroup.headers.map(column => (
