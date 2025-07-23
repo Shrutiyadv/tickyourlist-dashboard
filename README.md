@@ -4,7 +4,7 @@ A comprehensive React-based administrative dashboard application focused on auto
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Prerequisites(below)
 
 - **Node.js**: Version 20 or higher
 - **Python**: Version 3 or higher
