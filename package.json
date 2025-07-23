@@ -66,6 +66,7 @@
     "react-drag-listview": "^0.2.1",
     "react-dropzone": "^14.2.3",
     "react-dual-listbox": "^4.0.0",
+    "react-feather": "^2.0.10",
     "react-flatpickr": "^3.10.13",
     "react-i18next": "^12.1.1",
     "react-image-file-resizer": "^0.4.8",

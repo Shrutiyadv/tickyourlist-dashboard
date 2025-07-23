@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-
+import tourGroupVariantReducer from "./TourGroupVariant/reducer";
 // Front
 import Layout from "./layout/reducer";
 
@@ -99,7 +99,8 @@ const rootReducer = combineReducers({
   CarBlog,
   CarCustomer,
   CarDealer,
-  Testimonial
+  Testimonial,
+  TourGroupVariant: tourGroupVariantReducer
 });
 
 export default rootReducer;

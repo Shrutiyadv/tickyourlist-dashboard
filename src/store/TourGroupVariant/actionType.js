@@ -1,0 +1,16 @@
+// src/store/TourGroupVariant/actionType.js
+
+// Add Tour Group Variant
+export const ADD_TOUR_GROUP_VARIANT = "ADD_TOUR_GROUP_VARIANT";
+export const ADD_TOUR_GROUP_VARIANT_SUCCESS = "ADD_TOUR_GROUP_VARIANT_SUCCESS";
+export const ADD_TOUR_GROUP_VARIANT_ERROR = "ADD_TOUR_GROUP_VARIANT_ERROR";
+
+// Get List of Tour Group Variants
+export const GET_TOUR_GROUP_VARIANTS = "GET_TOUR_GROUP_VARIANTS";
+export const GET_TOUR_GROUP_VARIANTS_SUCCESS = "GET_TOUR_GROUP_VARIANTS_SUCCESS";
+export const GET_TOUR_GROUP_VARIANTS_ERROR = "GET_TOUR_GROUP_VARIANTS_ERROR";
+
+// Get List of Tours (for dropdown in form)
+export const GET_TOUR_LIST = "GET_TOUR_LIST";
+export const GET_TOUR_LIST_SUCCESS = "GET_TOUR_LIST_SUCCESS";
+export const GET_TOUR_LIST_ERROR = "GET_TOUR_LIST_ERROR";

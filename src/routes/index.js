@@ -8,6 +8,9 @@ import TourGroupVariantData from "../pages/TourGroupVariantData/index";
 // Profile
 import UserProfile from "../pages/Authentication/user-profile";
 
+import TourGroupVariant from "pages/TourGroupVariants/tourGroupVariant";
+
+
 // //Tasks
 import TasksList from "../pages/Tasks/tasks-list";
 import TasksCreate from "../pages/Tasks/tasks-create";
@@ -153,7 +156,11 @@ import Contactus from "pages/Settings/contactus";
 import AdvertiseWithUs from "pages/Settings/AdvertiseWithUs";
 import Banner from "pages/Automobile/Banner/Banner";
 import EcommerceCustomers from "pages/Ecommerce/EcommerceCustomers";
+<<<<<<< HEAD
 import { TourGroupVariants } from '../pages/TourGroups';
+=======
+import { components } from "react-select";
+>>>>>>> 1b74666 (Initial commit for tour-group-variants project)
 // import EmailVerification from "pages/AuthenticationInner/auth-email-verification";
 
 const authProtectedRoutes = [
@@ -175,8 +182,12 @@ const authProtectedRoutes = [
   { path: "/blog", component: <Blog /> },
   // { path: "/dashboard-job", component: <DashboardJob /> },
 
+<<<<<<< HEAD
   // Tour Group Variants
   { path: "/tour-group-variants-data", component: <TourGroupVariantData /> },
+=======
+   { path: "/tour-group-variants" , component: <TourGroupVariant />},
+>>>>>>> 1b74666 (Initial commit for tour-group-variants project)
 
   // //profile
   { path: "/profile", component: <UserProfile /> },
