@@ -4,6 +4,9 @@ import { Navigate } from "react-router-dom";
 // Profile
 import UserProfile from "../pages/Authentication/user-profile";
 
+import TourGroupVariant from "pages/TourGroupVariants/tourGroupVariant";
+
+
 // //Tasks
 import TasksList from "../pages/Tasks/tasks-list";
 import TasksCreate from "../pages/Tasks/tasks-create";
@@ -149,6 +152,7 @@ import Contactus from "pages/Settings/contactus";
 import AdvertiseWithUs from "pages/Settings/AdvertiseWithUs";
 import Banner from "pages/Automobile/Banner/Banner";
 import EcommerceCustomers from "pages/Ecommerce/EcommerceCustomers";
+import { components } from "react-select";
 // import EmailVerification from "pages/AuthenticationInner/auth-email-verification";
 
 const authProtectedRoutes = [
@@ -169,6 +173,8 @@ const authProtectedRoutes = [
   },
   { path: "/blog", component: <Blog /> },
   // { path: "/dashboard-job", component: <DashboardJob /> },
+
+   { path: "/tour-group-variants" , component: <TourGroupVariant />},
 
   // //profile
   { path: "/profile", component: <UserProfile /> },
